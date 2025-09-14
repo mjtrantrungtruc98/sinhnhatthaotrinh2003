@@ -20,6 +20,341 @@
 </head>
 
 <body>
+
+  <!-- css box quà -->
+
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body {
+  background: #000000;
+  overflow: hidden;
+}
+.container {
+  color: rgba(55, 59, 65, 0.8);
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+}
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+.merrywrap {
+  position: absolute;
+  right: 40px;
+  left: 40px;
+  bottom: 80px;
+  top: 40px;
+}
+.giftbox {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  margin-left: -20%;
+  bottom: 0;
+  z-index: 10;
+}
+.giftbox > div {
+  background: #F64747;
+  position: absolute;
+  box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.4);
+}
+.giftbox > div:after, .giftbox > div:before {
+  position: absolute;
+  content: "";
+  top: 0;
+}
+.giftbox:after {
+  position: absolute;
+  color: #99FF33;
+  width: 250px;
+  content: "Check túi mù!";
+  left: 40%;
+  top: -450%;
+  bottom: 0;
+  font-size: 40px;
+  text-align: center;
+  transform: rotate(0deg);
+  transform-origin: 0 0;
+}
+.giftbox .cover {
+  margin-left: -150px;
+  width: 400px;
+  top: -730%;
+  left: 130%;
+  height: 80px;
+  z-index: 2;
+}
+.giftbox .cover:before {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  width: 50px;
+  transform: translateX(-50%);
+  background: #2C3E50;
+}
+.giftbox .cover > div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+}
+.giftbox .cover > div:before, .giftbox .cover > div:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  box-shadow: inset 0 0 0 15px #2C3E50;
+  border-radius: 30px;
+  transform-origin: 50% 100%;
+}
+.giftbox .cover > div:before {
+  transform: translateX(-45%) skewY(40deg);
+}
+.giftbox .cover > div:after {
+  transform: translateX(45%) skewY(-40deg);
+}
+.giftbox .box {
+  right: 5%;
+  left: 5%;
+  margin-left: -50px;
+  top: -500px;
+  width: 400px;
+  height: 350px;
+  bottom: 0;
+}
+.giftbox .box:before {
+  width: 50px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2C3E50;
+}
+.giftbox .box:after {
+  width: 100%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0);
+}
+.step-1 .giftbox {
+  animation: wobble 0.5s linear infinite forwards;
+}
+.step-1 .cover {
+  animation: wobble 0.5s linear infinite 5s forwards;
+}
+.step-1 .icons .row span {
+  opacity: 1;
+}
+.step-2 .giftbox:after {
+  opacity: 0;
+}
+.step-3 .giftbox, .step-4 .giftbox {
+  opacity: 0;
+  z-index: 1;
+}
+.step-3 .giftbox:after, .step-4 .giftbox:after {
+  opacity: 0;
+}
+.step-2 .giftbox .cover {
+  animation: flyUp 2s ease-in forwards;
+}
+.step-2 .giftbox .box {
+  animation: flyDown 2s ease-in 0.05s forwards;
+}
+/* bắt đầu nút chuyển ảnh*/
+a {
+  position: absolute;
+  top: 85%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: #1670f0;
+  padding: 30px 60px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+a:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+a span:nth-child(1)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: animate1 2s linear infinite;
+}
+@keyframes animate1
+{
+  0%
+  {
+    transform: translateX(-100%);
+  }
+  100%
+  {
+    transform: translateX(100%);
+  }
+}
+a span:nth-child(2)
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate2
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}
+a span:nth-child(3)
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: animate3 2s linear infinite;
+}
+@keyframes animate3
+{
+  0%
+  {
+    transform: translateX(100%);
+  }
+  100%
+  {
+    transform: translateX(-100%);
+  }
+}
+a span:nth-child(4)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate4
+{
+  0%
+  {
+    transform: translateY(100%);
+  }
+  100%
+  {
+    transform: translateY(-100%);
+  }
+} /*Kết Thúc Nút chuyển ảnh*/
+/*.slider-img {
+      width: 800px;
+      height: 300px;
+      position: relative;
+      border: 0px solid red;
+      margin-top: 30%;
+      margin-left: 62%;
+      overflow: visible;
+      resize: cover;
+    } 
+    .flip {
+      width: 100%;
+      height: auto;
+      margin: 0px;
+      padding: 0px;
+      background-color: #000;
+      display: block;
+    }
+    .slider {
+      width: 100%;
+      height: 200px;
+      background: #000;
+      overflow: hidden;
+      margin-top: 5%;
+    }
+    .slider .carousel {
+      width: 100%;
+      margin: 100px auto 0;
+      overflow: visible;
+    }
+    .carousel img{
+      -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
+    } */
+@keyframes wobble {
+  25% {
+      transform: rotate(4deg);
+ }
+  75% {
+      transform: rotate(-2deg);
+ }
+}
+@keyframes flyUp {
+  75% {
+      opacity: 1;
+ }
+  100% {
+      transform: translateY(-1000px) rotate(20deg);
+      opacity: 0;
+ }
+}
+@keyframes flyDown {
+  75% {
+      opacity: 1;
+ }
+  100% {
+      transform: translateY(100%);
+      opacity: 0;
+ }
+}
+    </style>
   <!-- trái tim -->
   
   <style>
