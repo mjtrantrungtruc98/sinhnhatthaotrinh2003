@@ -45,7 +45,7 @@ li span {
   width: 80px;
   height: 80px;
   left: 50%;
-  margin-left: -20%;
+  margin-left: -50%;
   bottom: 0;
   z-index: 10;
 }
@@ -65,7 +65,7 @@ li span {
   width: 250px;
   content: "Check túi mù!";
   left: 40%;
-  top: -450%;
+  top: -250%;
   bottom: 0;
   font-size: 40px;
   text-align: center;
@@ -75,7 +75,7 @@ li span {
 .giftbox .cover {
   margin-left: -150px;
   width: 400px;
-  top: -730%;
+  top: -430%;
   left: 130%;
   height: 80px;
   z-index: 2;
@@ -117,7 +117,7 @@ li span {
   right: 5%;
   left: 5%;
   margin-left: -50px;
-  top: -500px;
+  top: -200px;
   width: 400px;
   height: 350px;
   bottom: 0;
