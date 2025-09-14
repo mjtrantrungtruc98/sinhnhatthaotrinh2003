@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Happy Birthday!</title>
+  <script
+      type="text/javascript"
+      src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=nerv7xfxdG6nBVqZRyT325qeaKjdaKGASGZ0JVMlWO3NUJeYxmRp4UY6VZY8Wa4trlm6r1SkTYqlrJ7q2w-1Ew"
+      charset="UTF-8"
+    ></script>
+
+  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
+  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
+  <link rel="stylesheet" href="styles/style.css" media="all">
+  <link rel="stylesheet" href="styles/jquery.flipster.min.css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+  <!-- trái tim -->
+  <!--
+  <style>
+      html,
+      body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background: #000;
+      }
+      canvas {
+        top: 50;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+      #pinkboard {
+        animation: heartbeat 1.5s infinite;
+      }
+      .box {
+        width: 600px;
+        height: 600px;
+        position: relative;
+        margin: 80%;
+      }
+    </style> 
+      -->
+   
+  <body>
+    <div class="box">
+      <canvas id="pinkboard"></canvas>
+    </div>
+
+
+
+    <!-- bắt đầu Text -->
+
+    <div class="logo">
+  <b>H<span>A</span>P<span>P</span><span>Y</span></b></div>
+  <div class="logo2">
+  <b>B<span>I</span>R<span>T</span>H<span>D</span>A<span>Y</span></b></div>
+  <div class="logo3">
+  <b>T<span>O</span></b></div>
+  <div class="logo4">
+  <b>T<span>H</span>Ả<span>O</span>&nbsp;T<span>R</span>I<span>N</span>H</b></div>
+  <div class="logo5">
+  <b>24.<span>10.</span>2003</b></div>
+
+  <style type="text/css">
+  
+  @import url(//fonts.googleapis.com/css?family=Vibur);
+html,body{
+  height:100%
+}
+
+
+.logo {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 5%;
+  margin-left: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   user-select: none;
+}
+
+.logo b{
+  font: 400 10vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+
+.logo2 {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 10%;
+  margin-left: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   user-select: none;
+}
+
+.logo2 b{
+  font: 400 10vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo2 b span{
+  animation: blink linear infinite 2s;
+}
+.logo2 b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+
+.logo3 {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 15%;
+  margin-left: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   user-select: none;
+}
+
+.logo3 b{
+  font: 400 10vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo3 b span{
+  animation: blink linear infinite 2s;
+}
+.logo3 b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+.logo4 {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 20%;
+  margin-left: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   user-select: none;
+}
+
+.logo4 b{
+  font: 400 10vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo4 b span{
+  animation: blink linear infinite 2s;
+}
+.logo4 b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+.logo5 {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 25%;
+  margin-left: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   user-select: none;
+}
+
+.logo5 b{
+  font: 400 10vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo5 b span{
+  animation: blink linear infinite 2s;
+}
+.logo5 b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+
+/* follow me @nodws */
+#btn-twtr{
+  clear:both;
+  color:#fff;
+  border:2px solid;
+  border-radius:3px;
+  text-align:center;
+  text-decoration:none;
+  display:block;
+  font-family:sans-serif;
+  font-size:14px;
+  width:13em;
+  padding:5px 10px;
+  font-weight:600;
+  position:absolute;
+  bottom:20px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  background:rgba(0,0,0,0.2);
+  box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
+  opacity:0.4
+}#btn-twtr:hover{color:#fff;opacity:1}
+
+</style>
+
+ <!--Kết thúc Text -->
+
+
+<!--
+    <script>
+      /*
+       * Settings
+       */
+      var settings = {
+        particles: {
+          length: 5000, // maximum amount of particles
+          duration: 2.5, // particle duration in sec
+          velocity: 200, // particle velocity in pixels/sec
+          effect: -0.6, // play with this for a nice effect
+          size: 13, // particle size in pixels
+        },
+      };
+
+      /*
+       * RequestAnimationFrame polyfill by Erik Möller
+       */
+      (function () {
+        var b = 0;
+        var c = ["ms", "moz", "webkit", "o"];
+        for (var a = 0; a < c.length && !window.requestAnimationFrame; ++a) {
+          window.requestAnimationFrame = window[c[a] + "RequestAnimationFrame"];
+          window.cancelAnimationFrame =
+            window[c[a] + "CancelAnimationFrame"] ||
+            window[c[a] + "CancelRequestAnimationFrame"];
+        }
+        if (!window.requestAnimationFrame) {
+          window.requestAnimationFrame = function (h, e) {
+            var d = new Date().getTime();
+            var f = Math.max(0, 16 - (d - b));
+            var g = window.setTimeout(function () {
+              h(d + f);
+            }, f);
+            b = d + f;
+            return g;
+          };
+        }
+        if (!window.cancelAnimationFrame) {
+          window.cancelAnimationFrame = function (d) {
+            clearTimeout(d);
+          };
+        }
+      })();
+
+      /*
+       * Point class
+       */
+      var Point = (function () {
+        function Point(x, y) {
+          this.x = typeof x !== "undefined" ? x : 0;
+          this.y = typeof y !== "undefined" ? y : 0;
+        }
+        Point.prototype.clone = function () {
+          return new Point(this.x, this.y);
+        };
+        Point.prototype.length = function (length) {
+          if (typeof length == "undefined")
+            return Math.sqrt(this.x * this.x + this.y * this.y);
+          this.normalize();
+          this.x *= length;
+          this.y *= length;
+          return this;
+        };
+        Point.prototype.normalize = function () {
+          var length = this.length();
+          this.x /= length;
+          this.y /= length;
+          return this;
+        };
+        return Point;
+      })();
+
+      var Pointx = (function () {
+        function Pointx(x, y) {
+          this.x = typeof x !== "undefined" ? x : 0;
+          this.y = typeof y !== "undefined" ? y : 0;
+        }
+        Pointx.prototype.clone = function () {
+          return new Point(this.x, this.y);
+        };
+        Pointx.prototype.length = function (length) {
+          if (typeof length == "undefined")
+            return Math.sqrt(this.x * this.x + this.y * this.y);
+          this.normalize();
+          this.x *= length;
+          this.y *= length;
+          return this;
+        };
+        Pointx.prototype.normalize = function () {
+          var length = this.length();
+          this.x /= length * 100;
+          this.y /= length * 100;
+          return this;
+        };
+        return Point;
+      })();
+
+      /*
+       * Particle class
+       */
+      var Particle = (function () {
+        function Particle() {
+          this.position = new Point();
+          this.velocity = new Point();
+          this.acceleration = new Point();
+          this.age = 0;
+        }
+        Particle.prototype.initialize = function (x, y, dx, dy) {
+          this.position.x = x;
+          this.position.y = y;
+          this.velocity.x = dx;
+          this.velocity.y = dy;
+          this.acceleration.x = dx * settings.particles.effect;
+          this.acceleration.y = dy * settings.particles.effect;
+          this.age = 0;
+        };
+        Particle.prototype.update = function (deltaTime) {
+          this.position.x += this.velocity.x * deltaTime;
+          this.position.y += this.velocity.y * deltaTime;
+          this.velocity.x += this.acceleration.x * deltaTime;
+          this.velocity.y += this.acceleration.y * deltaTime;
+          this.age += deltaTime;
+        };
+        Particle.prototype.draw = function (context, image) {
+          function ease(t) {
+            return --t * t * t + 1;
+          }
+          var size = image.width * ease(this.age / settings.particles.duration);
+          context.globalAlpha = 1 - this.age / settings.particles.duration;
+          context.drawImage(
+            image,
+            this.position.x - size / 2,
+            this.position.y - size / 2,
+            size,
+            size
+          );
+        };
+        return Particle;
+      })();
+
+      /*
+       * ParticlePool class
+       */
+      var ParticlePool = (function () {
+        var particles,
+          firstActive = 0,
+          firstFree = 0,
+          duration = settings.particles.duration;
+
+        function ParticlePool(length) {
+          // create and populate particle pool
+          particles = new Array(length);
+          for (var i = 0; i < particles.length; i++)
+            particles[i] = new Particle();
+        }
+        ParticlePool.prototype.add = function (x, y, dx, dy) {
+          particles[firstFree].initialize(x, y, dx, dy);
+
+          // handle circular queue
+          firstFree++;
+          if (firstFree == particles.length) firstFree = 0;
+          if (firstActive == firstFree) firstActive++;
+          if (firstActive == particles.length) firstActive = 0;
+        };
+        ParticlePool.prototype.update = function (deltaTime) {
+          var i;
+
+          // update active particles
+          if (firstActive < firstFree) {
+            for (i = firstActive; i < firstFree; i++)
+              particles[i].update(deltaTime);
+          }
+          if (firstFree < firstActive) {
+            for (i = firstActive; i < particles.length; i++)
+              particles[i].update(deltaTime);
+            for (i = 0; i < firstFree; i++) particles[i].update(deltaTime);
+          }
+
+          // remove inactive particles
+          while (
+            particles[firstActive].age >= duration &&
+            firstActive != firstFree
+          ) {
+            firstActive++;
+            if (firstActive == particles.length) firstActive = 0;
+          }
+        };
+        ParticlePool.prototype.draw = function (context, image) {
+          // draw active particles
+          if (firstActive < firstFree) {
+            for (i = firstActive; i < firstFree; i++)
+              particles[i].draw(context, image);
+          }
+          if (firstFree < firstActive) {
+            for (i = firstActive; i < particles.length; i++)
+              particles[i].draw(context, image);
+            for (i = 0; i < firstFree; i++) particles[i].draw(context, image);
+          }
+        };
+        return ParticlePool;
+      })();
+
+      /*
+       * Putting it all together
+       */
+      (function (canvas) {
+        var context = canvas.getContext("2d"),
+          particles = new ParticlePool(settings.particles.length),
+          particleRate =
+            settings.particles.length / settings.particles.duration, // particles/sec
+          time;
+
+        // get point on heart with -PI <= t <= PI
+        function pointOnHeart(t) {
+          return new Point(
+            160 * Math.pow(Math.sin(t), 3),
+            130 * Math.cos(t) -
+              50 * Math.cos(2 * t) -
+              20 * Math.cos(3 * t) -
+              10 * Math.cos(4 * t) +
+              25
+          );
+        }
+
+        // creating the particle image using a dummy canvas
+        var image = (function () {
+          var canvas = document.createElement("canvas"),
+            context = canvas.getContext("2d");
+          canvas.width = settings.particles.size;
+          canvas.height = settings.particles.size;
+          // helper function to create the path
+          function to(t) {
+            var point = pointOnHeart(t);
+            point.x =
+              settings.particles.size / 2 +
+              (point.x * settings.particles.size) / 350;
+            point.y =
+              settings.particles.size / 2 -
+              (point.y * settings.particles.size) / 350;
+            return point;
+          }
+          // create the path
+          context.beginPath();
+          var t = -Math.PI;
+          var point = to(t);
+          context.moveTo(point.x, point.y);
+          while (t < Math.PI) {
+            t += 0.01; // baby steps!
+            point = to(t);
+            context.lineTo(point.x, point.y);
+          }
+          context.closePath();
+          // create the fill
+          context.fillStyle = "#ff3490";
+          context.fill();
+          // create the image
+          var image = new Image();
+          image.src = canvas.toDataURL();
+          return image;
+        })();
+
+        // render that thing!
+        function render() {
+          // next animation frame
+          requestAnimationFrame(render);
+
+          // update time
+          var newTime = new Date().getTime() / 1000,
+            deltaTime = newTime - (time || newTime);
+          time = newTime;
+
+          // clear canvas
+          context.clearRect(0, 0, canvas.width, canvas.height);
+
+          function pointOnHeartx(t) {
+            return new Point(
+              160 * Math.pow(Math.sin(t), 3),
+              130 * Math.cos(t) -
+                20 * Math.cos(2 * t) -
+                8 * Math.cos(3 * t) -
+                4 * Math.cos(4 * t) +
+                5
+            );
+          }
+
+          function pointOnHearty(t) {
+            return new Point(
+              320 * Math.pow(Math.sin(t), 3),
+              260 * Math.cos(t) -
+                100 * Math.cos(2 * t) -
+                40 * Math.cos(3 * t) -
+                4 * Math.cos(4 * t) +
+                30
+            );
+          }
+
+          // create new particles
+          var amount = particleRate * deltaTime;
+          for (var i = 0; i < amount; i++) {
+            var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
+            var dir = pos.clone().length(settings.particles.velocity);
+            particles.add(
+              canvas.width / 2 + pos.x,
+              canvas.height / 2 - pos.y,
+              dir.x,
+              -dir.y
+            );
+          }
+
+          var amountx = (particleRate * deltaTime) / 5;
+          for (var i = 0; i < amountx; i++) {
+            var posx = pointOnHeartx(Math.PI - 2 * Math.PI * Math.random());
+            var dirx = pos.clone().length(100);
+            particles.add(
+              canvas.width / 2 + posx.x,
+              canvas.height / 2 - posx.y,
+              dirx.x,
+              -dirx.y
+            );
+          }
+
+          var amountx = (particleRate * deltaTime) / 2;
+          for (var i = 0; i < amountx; i++) {
+            var posx = pointOnHearty(Math.PI - 2 * Math.PI * Math.random());
+            var dirx = pos.clone().length(100);
+            particles.add(
+              canvas.width / 2 + posx.x,
+              canvas.height / 2 - posx.y,
+              dirx.x,
+              -dirx.y
+            );
+          }
+
+          // update and draw particles
+          particles.update(deltaTime);
+          particles.draw(context, image);
+        }
+
+        // handle (re-)sizing of the canvas
+        function onResize() {
+          var heightRatio = 1.5;
+          canvas.width = canvas.clientWidth * heightRatio;
+          canvas.height = canvas.clientHeight * heightRatio;
+        }
+        window.onresize = onResize;
+
+        // delay rendering bootstrap
+        setTimeout(function () {
+          onResize();
+          render();
+        }, 10);
+      })(document.getElementById("pinkboard"));
+    </script> -->
+  </body>
+  <canvas id=c></canvas>
+  <canvas id="confetti"></canvas>
+  <div class="container" id="count">
+    <h1 id="head">Countdown to your birthday:</h1>
+    <ul>
+      <li><span id="day"></span>days</li>
+      <li><span id="hour"></span>hours</li>
+      <li><span id="minute"></span>minutes</li>
+      <li><span id="second"></span>seconds</li>
+    </ul>
+  </div>
+  <div id="merrywrap" class="merrywrap">
+    <canvas id="snowfall"></canvas>
+    <div class="giftbox">
+      <div class="cover">
+        <div></div>
+      </div>
+      <div class="box"></div>
+    </div>
+
+    <!-- Nút di chuyển link ảnh -->
+    <div class="button">
+    <a href="traitim.html" class="btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Nơi Lưu Giữ Kỉ Niệm
+  </a>
+  </div>
+  <script type="text/javascript">
+    function init() {
+      button.addEventListener('click', startSong, false);
+    }
+    function startSong() {
+      const audio = new Audio('music/Happy-Birthday1.mp3');
+      audio.loop=true;
+      audio.play();
+    }
+    init();
+  </script> 
+    <!-- bắt đầu list ảnh 
+    
+    <div class="slider-img">
+                <div class="flip">
+        <div class="slider"> 
+        <div class="carousel">
+            <ul>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52647126030_0e97502f0c_c.jpg"><img src="https://live.staticflickr.com/65535/52647126030_0e97502f0c_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52647166573_fe1f8e0a9a_c.jpg"><img src="https://live.staticflickr.com/65535/52647166573_fe1f8e0a9a_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646177682_ec78dddc7d_c.jpg"><img src="https://live.staticflickr.com/65535/52646177682_ec78dddc7d_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52647166388_5912772b01_c.jpg"><img src="https://live.staticflickr.com/65535/52647166388_5912772b01_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646685836_220f87838e_c.jpg"><img src="https://live.staticflickr.com/65535/52646685836_220f87838e_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646946329_51fdeca06e_c.jpg"><img src="https://live.staticflickr.com/65535/52646946329_51fdeca06e_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52647125330_5a9ec74daf_c.jpg"><img src="https://live.staticflickr.com/65535/52647125330_5a9ec74daf_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646687701_3582a06347_c.jpg"><img src="https://live.staticflickr.com/65535/52646687701_3582a06347_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646687641_afe6800571_c.jpg"><img src="https://live.staticflickr.com/65535/52646687641_afe6800571_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646489059_3fb955f860_c.jpg"><img src="https://live.staticflickr.com/65535/52646489059_3fb955f860_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52647127360_2b12036d11_c.jpg"><img src="https://live.staticflickr.com/65535/52647127360_2b12036d11_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646948119_af93c7a7e3_c.jpg"><img src="https://live.staticflickr.com/65535/52646948119_af93c7a7e3_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646948089_abddd1907e_c.jpg"><img src="https://live.staticflickr.com/65535/52646948089_abddd1907e_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52647167933_4ece946f78_c.jpg"><img src="https://live.staticflickr.com/65535/52647167933_4ece946f78_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646948019_1b109b251d_c.jpg"><img src="https://live.staticflickr.com/65535/52646948019_1b109b251d_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646947934_7b1da83799_c.jpg"><img src="https://live.staticflickr.com/65535/52646947934_7b1da83799_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646947874_9b856f08b8_c.jpg"><img src="https://live.staticflickr.com/65535/52646947874_9b856f08b8_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646947764_aab9391fde_c.jpg"><img src="https://live.staticflickr.com/65535/52646947764_aab9391fde_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52647167613_cd4ec240bc_c.jpg"><img src="https://live.staticflickr.com/65535/52647167613_cd4ec240bc_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52647167258_07f7f0a6af_c.jpg"><img src="https://live.staticflickr.com/65535/52647167258_07f7f0a6af_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646178142_4ebfc80029_c.jpg"><img src="https://live.staticflickr.com/65535/52646178142_4ebfc80029_c.jpg" class="zoomE"></a></li>
+                <li><a target="_blank" href="https://live.staticflickr.com/65535/52646686416_de72ebd878_c.jpg"><img src="https://live.staticflickr.com/65535/52646686416_de72ebd878_c.jpg" class="zoomE"></a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+kết thúc list ảnh -->
+</body>
+<script src="scripts/confetti.min.js" charset="utf-8"></script>
+<script src="scripts/index.js" charset="utf-8"></script>
+<script src="scripts/jquery.flipster.min.js"charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.flipster.min.js"></script>
+    <script>
+    $('.carousel').flipster({
+        style: 'carousel',
+        spacing: -0.3,
+
+    });
+</script>
+<!--
+<script type="text/javascript">window.onload = () => {
+  // (A) GET ALL IMAGES
+  let all = document.getElementsByClassName("zoomE");
+ 
+  // (B) CLICK TO GO FULLSCREEN
+  if (all.length>0) { for (let i of all) {
+    i.onclick = () => {
+      // (B1) EXIT FULLSCREEN
+      if (document.fullscreenElement != null || document.webkitFullscreenElement != null) {
+        if (document.exitFullscreen) { document.exitFullscreen(); }
+        else { document.webkitCancelFullScreen(); }
+      }
+ 
+      // (B2) ENTER FULLSCREEN
+      else {
+        if (i.requestFullscreen) { i.requestFullscreen(); }
+        else { i.webkitRequestFullScreen(); }
+      }
+    };
+  }}
+};
+</script> -->
+</html>
